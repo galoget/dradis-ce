@@ -235,7 +235,7 @@ gem 'dradis-calculator_dread', '~> 4.12.0'
 
 # ---------------------------------------------------------------------- Export
 gem 'dradis-csv_export', '~> 4.12.0'
-gem 'dradis-html_export', '~> 4.12.0'
+gem 'dradis-html_export', '~> 4.13.0'
 
 # ---------------------------------------------------------------------- Import
 gem 'dradis-csv', '~> 4.12.0'
@@ -256,7 +256,7 @@ gem 'dradis-ntospider', '~> 4.12.0'
 gem 'dradis-openvas', '~> 4.12.0'
 gem 'dradis-pentera', '~> 4.12.0'
 gem 'dradis-qualys', '~> 4.12.0'
-gem 'dradis-saint', '~> 4.12.0'
+gem 'dradis-saint', '~> 4.13.0'
 gem 'dradis-veracode', '~> 4.12.0'
 gem 'dradis-wpscan', '~> 4.12.0'
 gem 'dradis-zap', '~> 4.12.0'
