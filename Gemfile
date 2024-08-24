@@ -175,7 +175,7 @@ group :development do
   gem 'bundler-audit', require: false
   gem 'ruby_audit', require: false
 
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.39.0', require: false
 end
 
 group :development, :test do
@@ -190,7 +190,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'capybara', '~> 3.39'
   gem 'guard-rspec', require: false
-  gem 'selenium-webdriver', '~> 4.17'
+  gem 'selenium-webdriver', '~> 4.19', '>= 4.19.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'timecop'
 
