@@ -175,7 +175,7 @@ group :development do
   gem 'bundler-audit', require: false
   gem 'ruby_audit', require: false
 
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
 end
 
 group :development, :test do
