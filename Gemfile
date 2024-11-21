@@ -70,7 +70,7 @@ gem 'font-awesome-sass', '~> 6.4.0'
 
 gem 'importmap-rails', '~> 1.2'
 
-gem 'sprockets-rails', '>= 3.0.0'
+gem 'sprockets-rails', '>= 3.5.0'
 
 # ------------------------------------------------------ With native extensions
 # These require native extensions.
