@@ -104,7 +104,7 @@ gem 'RedCloth', '~> 4.3.4', require: 'redcloth'
 gem 'rinku'
 
 # html-pipeline dependency for html sanitization
-gem 'sanitize', '6.0.2'
+gem 'sanitize', '7.0.0'
 
 # SQLite3 DB driver
 gem 'sqlite3'
