@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.12.0', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 5.2.3'
+gem 'bootstrap', '~> 5.3.2'
 gem 'jquery-rails'
 gem 'jquery-fileupload-rails', '~> 0.3.4'
 gem 'jquery-hotkeys-rails'
