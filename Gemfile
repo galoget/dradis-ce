@@ -35,7 +35,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.12.0', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 5.2.3'
+gem 'bootstrap', '~> 5.3.2'
 gem 'jquery-rails'
 gem 'jquery-fileupload-rails', '~> 0.3.4'
 gem 'jquery-hotkeys-rails'
@@ -118,10 +118,10 @@ gem 'pg'
 gem 'cancancan', '~> 1.10'
 
 # Redis-based background worker
-gem 'resque', require: 'resque/status_server'
+gem 'resque', '>= 2.2.1', require: 'resque/status_server'
 gem 'resque-status'
 # See https://github.com/sinatra/sinatra/issues/1055
-gem 'sinatra', '~> 2.2.3'
+gem 'sinatra', '~> 4.0.0'
 
 # Forms that integrate with Twitter's Bootstrap
 gem 'simple_form'
