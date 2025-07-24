@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.2.2.1'
+gem 'rails', '~> 8.0.0.0'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 5.0'
 # Cache-friendly, client-side local time
 gem 'local_time', '>= 2.0.0'
 
-gem 'turbo-rails', '~> 2.0'
+gem 'turbo-rails', '~> 2.0', '>= 2.0.5'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -35,9 +35,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.12.0', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 5.2.3'
-gem 'jquery-rails'
-gem 'jquery-fileupload-rails', '~> 0.3.4'
+gem 'bootstrap', '~> 5.3.0'
+gem 'jquery-rails', '>= 4.5.0'
+gem 'jquery-fileupload-rails', '~> 0.4.0'
 gem 'jquery-hotkeys-rails'
 
 # Sortable lists
@@ -64,14 +64,14 @@ gem 'record_tag_helper'
 
 gem 'rubyzip', '>= 1.2.2'
 
-gem 'thor', '~> 1.2.1'
+gem 'thor', '~> 1.4.0'
 
 # Ruby dependency, version specified here due to CVE-2023-28756
 gem 'time', '>= 0.2.2'
 
 gem 'font-awesome-sass', '~> 6.4.0'
 
-gem 'importmap-rails', '~> 1.2'
+gem 'importmap-rails', '~> 1.2', '>= 1.2.2'
 
 gem 'sprockets-rails', '>= 3.0.0'
 
@@ -151,7 +151,7 @@ gem 'puma', '>= 6.4.3'
 # ----------------------------------------------------- Development and Testing
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 4.1.0'
+  gem 'web-console', '>= 4.2.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
@@ -175,8 +175,8 @@ group :development do
 
   # security
   gem 'brakeman', require: false
-  gem 'bundler-audit', require: false
-  gem 'ruby_audit', require: false
+  gem 'bundler-audit', '>= 0.9.2', require: false
+  gem 'ruby_audit', '>= 2.2.0', require: false
 
   gem 'rubocop', require: false
 end
@@ -185,12 +185,12 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   # rspec-rails < 7.0.0 does not support rails 7.2
-  gem 'rspec-rails', '~> 7.0.0'
+  gem 'rspec-rails', '~> 7.1.0'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.3.0'
   gem 'capybara', '~> 3.40'
   gem 'guard-rspec', require: false
   gem 'selenium-webdriver', '~> 4.29'
@@ -239,7 +239,7 @@ gem 'dradis-calculator_mitre', github: 'dradis/dradis-calculator_mitre'
 
 # ---------------------------------------------------------------------- Export
 gem 'dradis-csv_export', '~> 4.16.0'
-gem 'dradis-html_export', '~> 4.16.0'
+gem 'dradis-html_export', '~> 4.17.0'
 
 # ---------------------------------------------------------------------- Import
 gem 'dradis-csv', '~> 4.16.1'
@@ -260,7 +260,7 @@ gem 'dradis-ntospider', '~> 4.16.0'
 gem 'dradis-openvas', '~> 4.16.0'
 gem 'dradis-pentera', '~> 4.16.0'
 gem 'dradis-qualys', '~> 4.16.0'
-gem 'dradis-saint', '~> 4.16.0'
+gem 'dradis-saint', '~> 4.17.0'
 gem 'dradis-veracode', '~> 4.16.0'
 gem 'dradis-wpscan', '~> 4.16.0'
 gem 'dradis-zap', '~> 4.16.0'
