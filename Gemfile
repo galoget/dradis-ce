@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.2.2.1'
+gem 'rails', '~> 7.2.2.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -41,7 +41,7 @@ gem 'jquery-fileupload-rails', '~> 0.3.4'
 gem 'jquery-hotkeys-rails'
 
 # Sortable lists
-gem 'acts_as_list', '~> 0.7.5'
+gem 'acts_as_list', '~> 0.8.0'
 
 # Organize Node tree
 gem 'acts_as_tree', '~> 2.9.1'
@@ -54,9 +54,9 @@ gem 'differ', '~> 0.1.2'
 gem 'html-pipeline'
 gem 'liquid'
 
-gem 'kaminari', '~> 1.2.1'
+gem 'kaminari', '~> 1.2.2'
 
-gem 'paper_trail', '~> 15.2.0'
+gem 'paper_trail', '~> 16.0.0'
 
 # gem 'rails_autolink', '~> 1.1'
 
@@ -189,7 +189,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.1.0'
   gem 'factory_bot_rails'
   gem 'capybara', '~> 3.40'
   gem 'guard-rspec', require: false
