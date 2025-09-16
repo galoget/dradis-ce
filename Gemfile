@@ -123,7 +123,7 @@ gem 'cancancan', '~> 1.10'
 gem 'resque'
 
 # See https://github.com/sinatra/sinatra/issues/1055
-gem 'sinatra', '~> 2.2.3'
+gem 'sinatra', '~> 4.1.0'
 
 # Forms that integrate with Twitter's Bootstrap
 gem 'simple_form'
