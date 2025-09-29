@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.4.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 8.0.2'
+gem 'rails', '~> 8.0.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -200,7 +200,7 @@ group :test do
   gem 'factory_bot_rails', '~> 6.5'
   gem 'capybara', '~> 3.40'
   gem 'guard-rspec', require: false
-  gem 'selenium-webdriver', '~> 4.29'
+  gem 'selenium-webdriver', '~> 4.30', '>= 4.30.0'
   gem 'shoulda-matchers', '~> 4.0.1'
   gem 'timecop'
 
