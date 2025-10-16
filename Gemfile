@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.4.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 8.0.2'
+gem 'rails', '~> 8.0.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 6.0'
@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 5.0'
 # Cache-friendly, client-side local time
 gem 'local_time', '>= 2.0.0'
 
-gem 'turbo-rails', '~> 2.0'
+gem 'turbo-rails', '~> 2.0', '>= 2.0.5'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -35,9 +35,9 @@ gem 'jbuilder', '~> 2.13'
 gem 'bootsnap', '>= 1.12.0', require: false
 
 # ---------------------------------------------------- Dradis Community Edition
-gem 'bootstrap', '~> 5.2.3'
-gem 'jquery-rails'
-gem 'jquery-fileupload-rails', '~> 0.3.4'
+gem 'bootstrap', '~> 5.3.0'
+gem 'jquery-rails', '>= 4.5.0'
+gem 'jquery-fileupload-rails', '~> 0.4.0'
 gem 'jquery-hotkeys-rails'
 
 # Sortable lists
@@ -73,9 +73,9 @@ gem 'time', '>= 0.2.2'
 
 gem 'font-awesome-sass', '~> 6.4.0'
 
-gem 'importmap-rails', '~> 1.2'
+gem 'importmap-rails', '~> 1.2', '>= 1.2.2'
 
-gem 'sprockets-rails', '>= 3.0.0'
+gem 'sprockets-rails', '>= 3.5.0'
 
 # ------------------------------------------------------ With native extensions
 # These require native extensions.
@@ -123,7 +123,7 @@ gem 'cancancan', '~> 1.10'
 gem 'resque'
 
 # Forms that integrate with Twitter's Bootstrap
-gem 'simple_form'
+gem 'simple_form', '>= 5.3.0'
 
 # Word content control filter string parsing
 gem 'parslet', '~> 1.6.0'
@@ -132,7 +132,7 @@ gem 'parslet', '~> 1.6.0'
 gem 'image_size', '~> 1.3.0'
 
 # Handle authentication at the Rack level
-gem 'warden', '~> 1.2.3'
+gem 'warden', '~> 1.2.9'
 
 # Schedule cron jobs
 gem 'whenever', require: false
@@ -152,10 +152,10 @@ gem 'csv'
 # ----------------------------------------------------- Development and Testing
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 4.1.0'
+  gem 'web-console', '>= 4.2.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
-  gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rack-mini-profiler', '~> 2.3', '>= 2.3.1'
   gem 'listen'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -189,12 +189,12 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   # rspec-rails < 7.0.0 does not support rails 7.2
-  gem 'rspec-rails', '~> 7.0.0'
+  gem 'rspec-rails', '~> 7.1.0'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'factory_bot_rails', '~> 6.5'
+  gem 'factory_bot_rails', '~> 6.5', '>= 6.5.1'
   gem 'capybara', '~> 3.40'
   gem 'guard-rspec', require: false
   gem 'selenium-webdriver', '~> 4.35'
