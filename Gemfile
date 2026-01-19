@@ -120,7 +120,7 @@ gem 'sqlite3'
 gem 'cancancan', '~> 1.10'
 
 # Redis-based background worker
-gem 'resque'
+gem 'resque', '>= 3.0.0'
 
 # Forms that integrate with Twitter's Bootstrap
 gem 'simple_form'
